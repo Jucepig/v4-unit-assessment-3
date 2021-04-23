@@ -17,9 +17,14 @@ class App extends Component {
   }
 
   addToShelf = (title) => {
-    this.setState({
-      shelf : [...this.state.shelf, title]
-    })
+    let currentShelf = this.state.shelf
+    let notOnShelf = []
+    if(currentShelf.indexOf(title) === -1) {
+      notOnShelf.push(title)
+      this.setState({
+        shelf : [...this.state.shelf, ...notOnShelf]
+      })
+    }
   }
 
   clearShelf = () => {

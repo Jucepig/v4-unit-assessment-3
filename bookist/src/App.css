@@ -76,3 +76,16 @@
   margin-top: 10px;
   font-size: 14px;
 }
+
+#book-container {
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  font-family: 'Orelega One', cursive;
+  font-size: 14px;
+  width: 50%;
+  color: #81D2C7;
+  text-align: center;
+}
