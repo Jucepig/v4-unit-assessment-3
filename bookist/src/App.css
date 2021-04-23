@@ -9,6 +9,12 @@
   flex-direction: column;
 }
 
+button:hover {
+  color: #ff7a59;
+  border: #ff7a59 solid 2px;
+  background:#fff;
+}
+
 #header {
   justify-content: center;
   font-family: 'Orelega One', cursive;
@@ -35,6 +41,8 @@
 #main {
   height: calc(100vh - 120px);
 }
+
+
 
 /*----- BOOKLIST ------*/
 #book-list {
